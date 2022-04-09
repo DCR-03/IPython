@@ -1,0 +1,41 @@
+courseNumRoom = {1809: "Room 1" , 2210: "Room 2", 3971: "Room 3"}
+
+courseNumProf = {1809: "Professor Diana", 2210: "Professor Peters", 3971: "Professor Little"}
+
+courseNumTime = {1809: "1:30pm" , 2210: "10:10pm", 3971: "5:50pm"}
+
+#allInfo = courseNumRoom.copy() 
+
+#allInfo.update(courseNumProf)
+
+allInfo = {1809: "Room 1 " "Professor Diana " "1:30pm", 2210: "Room 2 " "Professor Peters " "10:10pm", 3971: "Room 3 " "Professor Little " "5:50pm"} 
+
+
+
+print(allInfo)
+
+def askUser():
+  entry = input("Enter a course number for a course that you would like to learn about:")
+
+  if entry == "1809":
+    print ("1809: Room 1 with Professor Diana at 1:30pm")
+
+  if entry == "2210":
+    print ("2210: Room 1 with Professor Diana at 1:30pm")
+
+  if entry == "3971":
+    print ("3971: Room 1 with Professor Diana at 1:30pm")
+
+  else:
+    goAgain()
+
+
+
+
+def goAgain():
+  stop =input("Would you like to try again?")
+  if stop == "No":
+    exit()
+  askUser()
+  
+askUser()
